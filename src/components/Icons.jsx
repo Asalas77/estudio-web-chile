@@ -87,6 +87,20 @@ export const Pin = (p) => (
   <svg {...base} {...p}><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" /><circle cx="12" cy="10" r="3" /></svg>
 )
 
+export const Sol = (p) => (
+  <svg {...base} {...p}>
+    <circle cx="12" cy="12" r="4" />
+    <line x1="12" y1="2" x2="12" y2="4" /><line x1="12" y1="20" x2="12" y2="22" />
+    <line x1="4.2" y1="4.2" x2="5.6" y2="5.6" /><line x1="18.4" y1="18.4" x2="19.8" y2="19.8" />
+    <line x1="2" y1="12" x2="4" y2="12" /><line x1="20" y1="12" x2="22" y2="12" />
+    <line x1="4.2" y1="19.8" x2="5.6" y2="18.4" /><line x1="18.4" y1="5.6" x2="19.8" y2="4.2" />
+  </svg>
+)
+
+export const Luna = (p) => (
+  <svg {...base} {...p}><path d="M21 12.5A8.5 8.5 0 1 1 11.5 3 7 7 0 0 0 21 12.5z" /></svg>
+)
+
 export const Grafico = (p) => (
   <svg {...base} {...p}><line x1="3" y1="21" x2="21" y2="21" /><rect x="5" y="12" width="4" height="9" /><rect x="11" y="7" width="4" height="14" /><rect x="17" y="3" width="4" height="18" /></svg>
 )

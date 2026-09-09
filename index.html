@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diseño Web en Curicó | Precios claros y calculadora online</title>
     <meta name="description" content="Diseño de páginas web, tiendas online y automatización con WhatsApp en Curicó, Región del Maule. Calcula el precio de tu sitio web en 30 segundos, sin reuniones ni cotizaciones a ciegas." />
-    <meta name="theme-color" content="#0b0f1a" />
+    <meta name="theme-color" content="#f6f7fb" />
     <link rel="canonical" href="https://tudominio.cl/" />
+    <script>
+      // Aplica el tema guardado antes del primer render, para evitar el
+      // parpadeo de modo claro→oscuro (o viceversa) al cargar la página.
+      try {
+        if (localStorage.getItem('tema') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark')
+        }
+      } catch (e) {}
+    </script>
 
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_CL" />
