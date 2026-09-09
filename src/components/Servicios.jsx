@@ -1,10 +1,15 @@
 import { linkWhatsApp } from '../data/config.js'
 import { Enchufe, Robot, Grafico, Escudo } from './Icons.jsx'
 
+// import.meta.env.BASE_URL antepone el "base" de vite.config.js
+// (necesario en GitHub Pages, donde el sitio vive en /estudio-web-chile/
+// y no en la raíz del dominio).
+const img = (nombre) => `${import.meta.env.BASE_URL}img/servicios/${nombre}`
+
 const CONSULTORIA = [
   {
     icono: <Robot />,
-    imagen: '/img/servicios/app-movil.jpg',
+    imagen: img('app-movil.jpg'),
     posicion: '50% 78%',
     titulo: 'Desarrollo de apps móviles',
     desc: 'Aplicaciones a medida para Android e iOS: desde una app de cara al cliente hasta una herramienta interna para tu equipo en terreno.',
@@ -12,7 +17,7 @@ const CONSULTORIA = [
   },
   {
     icono: <Enchufe />,
-    imagen: '/img/servicios/sap-consultoria.jpg',
+    imagen: img('sap-consultoria.jpg'),
     titulo: 'Soporte y consultoría SAP Business One',
     desc: 'Configuración, integraciones y soporte técnico sobre SAP B1. Conectamos SAP con tus otros sistemas para que la información no quede duplicada.',
     tags: ['SAP B1', 'Integraciones', 'Soporte técnico'],
@@ -23,19 +28,19 @@ const APPS_PROPIAS = [
   {
     nombre: 'Kontrol',
     icono: <Escudo />,
-    imagen: '/img/servicios/kontrol.jpg',
+    imagen: img('kontrol.jpg'),
     desc: 'Aplicación de control y gestión operativa: seguimiento de tareas, checklists y reportes en tiempo real para equipos en terreno.',
   },
   {
     nombre: 'Guardias',
     icono: <Grafico />,
-    imagen: '/img/servicios/guardias.jpg',
+    imagen: img('guardias.jpg'),
     desc: 'Gestión de turnos y rondas para personal de seguridad: asignación de guardias, marcaciones de ronda e incidentes desde el celular.',
   },
   {
     nombre: 'Inventario',
     icono: <Enchufe />,
-    imagen: '/img/servicios/inventario.jpg',
+    imagen: img('inventario.jpg'),
     desc: 'Control de stock y bodega con ingreso, salida y conteo por código, pensado para pymes que hoy llevan el inventario en planillas.',
   },
 ]
