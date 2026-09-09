@@ -12,12 +12,17 @@ export default function Hero() {
   return (
     <>
       <section className="hero" id="top">
+        <div className="hero-foto">
+          <img src={`${import.meta.env.BASE_URL}img/hero/equipo.jpg`} alt="" />
+        </div>
+        <div className="hero-velo" />
+
         <div className="wrap hero-inner">
-          <span className="eyebrow">
+          <span className="eyebrow claro">
             {NEGOCIO.ciudad} · {NEGOCIO.region}
           </span>
 
-          <h1>
+          <h1 className="hero-titulo">
             Cuánto cuesta tu página web,{' '}
             <span className="destacado">sin tener que preguntar</span>
           </h1>
@@ -33,7 +38,7 @@ export default function Hero() {
               <Calculadora /> Calcular mi precio ahora
             </a>
             <a
-              className="btn btn-fantasma"
+              className="btn btn-fantasma btn-sobre-foto"
               href={linkWhatsApp('Hola, vi el sitio y quiero hacer una consulta.')}
               target="_blank"
               rel="noreferrer"
